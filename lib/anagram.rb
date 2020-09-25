@@ -114,7 +114,7 @@ end
       end   
     end
     if ((arr.join('').match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
-     return ('enter a word!')
+     return (false)
     else
      return true
     end

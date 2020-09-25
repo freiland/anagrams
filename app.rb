@@ -8,8 +8,19 @@ string_two =gets.chomp()
 
 
 new_ex = Anagram.new(string_one, string_two)
+uno = string_one.split
+dos = string_two.split
 
-new_ex.check?()
+if (uno[1] || dos[1])
+  if new_ex.multi_vowel() == false
+    puts('Please enter a real word!')
+  else
+    puts(new_ex.multi_anagram())
+  end
+else
+  puts(new_ex.check?())
+end
+
 
  
 
