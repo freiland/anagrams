@@ -36,7 +36,7 @@ class Anagram
  end
 
  def multi_anagram()
-  up_one = @word_one.upcase.split(//).sort
+  up_one = @word_one.upcase.split(" ").sort
 
   #up_two = @word_two.upcase.split(//).sort
  end
