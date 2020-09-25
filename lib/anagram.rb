@@ -1,10 +1,14 @@
-class Anagram (word_one, word_two)
+class Anagram 
 
-  def initialize ()
+  def initialize (word_one, word_two)
     @word_one = word_one
     @word_two = word_two
   end
 
-  
+
+  def check()
+    puts('test')
+  end
+end
   
     
