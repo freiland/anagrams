@@ -36,10 +36,19 @@ class Anagram
  end
 
  def multi_anagram()
-  up_one = @word_one.upcase.split(" ").sort
+  up_one = @word_one.upcase.split(//).sort
+  arr = []
+  up_one.each do |letter|
+    if letter.match(/\p{Lu}/)
+      arr.push(letter)
 
-  #up_two = @word_two.upcase.split(//).sort
- end
+    
+    end
+    arr
+  end
+end
+
+  #up_two = @word_two.upcase.split(//).so
 
 
   

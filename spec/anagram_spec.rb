@@ -15,13 +15,9 @@ describe ('anagrams') do
 
   it('return true if the words have letters, false if they are an antigram') do
     new_ana = Anagram.new('hi', 'bye')
-    expect(new_ana.anti()).to(eq('snead'))
+    expect(new_ana.anti()).to(eq('antigram'))
   end
 
-  it('return true if the words have letters, false if they are an antigram') do
-    new_ana = Anagram.new('hi', 'bye')
-    expect(new_ana.anti()).to(eq('snead'))
-  end
 
   it('check to see if input string has multiple words') do
     new_ana = Anagram.new('hi snead', 'bye snead')
