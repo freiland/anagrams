@@ -113,8 +113,9 @@ end
 
       end   
     end
-    if ((arr.match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
-     return (false)
+    
+    if ((arr.join("").scan(/aeiou/) == nil) || (two_arr.join("").scan(/aeiou/) == nil))
+     return (arr.join("").scan(/aeiou/))
     else
      return true
     end

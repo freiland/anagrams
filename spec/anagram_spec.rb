@@ -35,8 +35,8 @@ describe ('anagrams') do
   end
 
   it('checks to see if a multi string input has vowels') do
-    new_ana = Anagram.new('hello', 'mom')
-    expect(new_ana.multi_vowel()).to(eq('enter a word!'))
+    new_ana = Anagram.new('ho', 'mom')
+    expect(new_ana.multi_vowel()).to(eq('enter a!'))
   end
 
 end
