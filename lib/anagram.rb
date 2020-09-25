@@ -21,9 +21,9 @@ class Anagram
 
   def vowel?()
      if ((@word_one.match(/[aeiou]/) == nil) || (@word_two.match(/[aeiou]/) == nil))
-      return ('enter a word!')
+      return (false)
      else
-      return true
+      return (true)
      end
   end
 
@@ -113,7 +113,7 @@ end
 
       end   
     end
-    if ((arr.join('').match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
+    if ((arr.match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
      return (false)
     else
      return true

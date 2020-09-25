@@ -17,8 +17,12 @@ if (uno[1] || dos[1])
   else
     puts(new_ex.multi_anagram())
   end
-else
+else 
+  if new_ex.vowel?() == false
+    puts('Enter a real word!')
+  else
   puts(new_ex.check?())
+end
 end
 
 
