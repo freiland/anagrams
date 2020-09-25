@@ -22,6 +22,14 @@ class Anagram
       return true
      end
   end
+
+  def anti()
+    up_one = @word_one.upcase.split(//).sort
+    
+    up_two = @word_two.upcase.split(//).sort
+
+    up_one.include(up_two)
+ end
 end
   
     

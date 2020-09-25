@@ -12,4 +12,9 @@ describe ('anagrams') do
     new_ana = Anagram.new('vowl', 'nvwl')
     expect(new_ana.vowel?()).to(eq('enter a word!'))
   end
+
+  it('return true if the words are antigrams, meaning each word containes no matching letters') do
+    new_ana = Anagram.new('test', 'zip')
+    expect(new_ana.vowel?()).to(eq(false))
+  end
 end
