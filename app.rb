@@ -12,7 +12,7 @@ uno = string_one.split
 dos = string_two.split
 
 if (uno[1] || dos[1])
-  if new_ex.multi_vowel() == false
+  if new_ex.vowel?() == false
     puts('Please enter a real word!')
   else
     puts(new_ex.multi_anagram())
