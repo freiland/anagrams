@@ -16,8 +16,10 @@ class Anagram
   end
 
   def vowel?()
-     if (@word_two.match(/[aeiou]/) == nil)
+     if ((@word_one.match(/[aeiou]/) == nil) || (@word_two.match(/[aeiou]/) == nil))
       return ('enter a word!')
+     else
+      return true
      end
   end
 end

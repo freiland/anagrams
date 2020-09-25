@@ -9,7 +9,7 @@ describe ('anagrams') do
   end
 
   it('return true if both inputs contain a vowel, false if one or both have no vowels') do
-    new_ana = Anagram.new('vowel', 'nvwl')
+    new_ana = Anagram.new('vowl', 'nvwl')
     expect(new_ana.vowel?()).to(eq('enter a word!'))
   end
 end
