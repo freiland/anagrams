@@ -114,8 +114,8 @@ end
       end   
     end
     
-    if ((arr.join("").scan(/aeiou/) == nil) || (two_arr.join("").scan(/aeiou/) == nil))
-     return (arr.join("").scan(/aeiou/))
+    if ((arr.join("").match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
+     return true
     else
      return true
     end
