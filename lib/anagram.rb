@@ -6,8 +6,11 @@ class Anagram
   end
 
 
-  def check()
-    puts('test')
+  def check?()
+    arr_one = []
+    arr_two = []
+    low_one = @word_one.upcase.split 
+    low_two = @word_two.upcase.split
   end
 end
   
