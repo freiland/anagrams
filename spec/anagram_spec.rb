@@ -28,4 +28,10 @@ describe ('anagrams') do
     new_ana = Anagram.new('hi man', 'nam ih')
     expect(new_ana.multi_anagram()).to(eq('anagram'))
   end
+
+  it('check to see if string input has multiple words') do
+    new_ana = Anagram.new('hi man', 'nam ih')
+    expect(new_ana.multi_word?()).to(eq('anagram'))
+  end
+
 end

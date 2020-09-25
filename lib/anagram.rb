@@ -90,6 +90,14 @@ end
     end
   end
 
+  def multi_word?()
+    string_one = @word_one.split
+    string_two = @word_two.split 
+    if string_one[1] 
+      return true 
+    el
+    end
+  end
   
 
   
