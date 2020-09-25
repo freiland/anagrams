@@ -12,7 +12,11 @@ class Anagram
     
     up_two = @word_two.upcase.split(//).sort
     
-    up_one == up_two
+    if (up_one == up_two)
+      return ('You have an anagram!')
+    else
+      return ('no anagram')
+    end
   end
 
   def vowel?()
@@ -89,27 +93,5 @@ end
       return ('no anagram')
     end
   end
-
-  def multi_word?()
-    string_one = @word_one.split
-    string_two = @word_two.split 
-    if string_one[1] 
-      return true 
-    el
-    end
-  end
-  
-
-  
 end
 
-  
-
-
-  
-
-
-
-
-  
-    

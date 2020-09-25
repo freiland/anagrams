@@ -1,3 +1,5 @@
 require ('./lib/anagram')
 
-puts ('Welcome')
+puts('Do you have an anagram?')
+
+
