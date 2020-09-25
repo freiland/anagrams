@@ -35,7 +35,7 @@ class Anagram
     if ((up_one & up_two) == [])
       return ('antigram')
     else
-      return ('letter match')
+      return (' ')
     end
  end
 
@@ -61,9 +61,9 @@ class Anagram
   end
 
   if ((arr & two_arr) == [])
-    return ('antigram')
+    return ('you have an antigram')
   else
-    return ('letter match')
+    return (' ')
   end
 end
 
@@ -115,7 +115,7 @@ end
     end
     
     if ((arr.join("").match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
-     return true
+     return true 
     else
      return true
     end

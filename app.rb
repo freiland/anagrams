@@ -16,12 +16,14 @@ if (uno[1] || dos[1])
     puts('Please enter a real word!')
   else
     puts(new_ex.multi_anagram())
+    puts(new_ex.multi_anti())
   end
 else 
   if new_ex.vowel?() == false
     puts('Enter a real word!')
   else
   puts(new_ex.check?())
+  puts(new_ex.multi_anti())
 end
 end
 
