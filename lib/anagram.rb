@@ -35,7 +35,7 @@ class Anagram
     end
  end
 
- def multi_anagram()
+ def multi_anti()
   
   up_one = @word_one.upcase.split(//).sort
   up_two = @word_two.upcase.split(//).sort
@@ -61,15 +61,22 @@ class Anagram
   else
     return ('letter match')
   end
+end
+
+  def multi_anagram()
+    puts('test')
+  end
+
+  
 
   
 end
 
-  #up_two = @word_two.upcase.split(//).so
+  
 
 
   
-end
+
 
 
 

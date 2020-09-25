@@ -19,7 +19,12 @@ describe ('anagrams') do
   end
 
 
-  it('check to see if input string has multiple words') do
+  it('check to see if multi word input string is an antigram') do
+    new_ana = Anagram.new('hi man', 'sup callz')
+    expect(new_ana.multi_anti()).to(eq('letter match'))
+  end
+
+  it('check to see if multi word input string is an anagram') do
     new_ana = Anagram.new('hi man', 'sup callz')
     expect(new_ana.multi_anagram()).to(eq('letter match'))
   end
