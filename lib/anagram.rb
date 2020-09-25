@@ -14,6 +14,10 @@ class Anagram
     
     up_one == up_two
   end
+
+  def vowel?()
+    puts('test')
+  end
 end
   
     
