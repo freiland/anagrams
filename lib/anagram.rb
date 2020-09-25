@@ -16,7 +16,7 @@ class Anagram
   end
 
   def vowel?()
-    puts('test')
+    @word_one.include?('aeiou')
   end
 end
   
