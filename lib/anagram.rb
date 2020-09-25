@@ -88,10 +88,37 @@ end
     end
 
     if (arr == two_arr)
-      return ('anagram')
+      return ('anagram!')
     else
-      return ('no anagram')
+      return ('no anagram, sorry')
     end
   end
+
+  def multi_vowel()
+    up_one = @word_one.upcase.split(//).sort
+    up_two = @word_two.upcase.split(//).sort
+  
+    arr = []
+    two_arr = []
+  
+    up_one.each do |letter|
+      if letter.match(/\w/)
+        arr.push(letter)
+      end 
+    end
+
+    up_two.each do |letter|
+      if letter.match(/\w/)
+        two_arr.push(letter)
+
+      end   
+    end
+    if ((arr.join('').match(/[aeiou]/) == nil) || (two_arr.join("").match(/[aeiou]/) == nil))
+     return ('enter a word!')
+    else
+     return true
+    end
+ end
+
 end
 

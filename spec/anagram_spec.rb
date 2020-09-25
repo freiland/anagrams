@@ -8,7 +8,7 @@ describe ('anagrams') do
     expect(new_ana.check?()).to(eq(true))
   end
 
-  it('return true if both inputs contain a vowel, false if one or both have no vowels') do
+  it('return true if both inputs contain a vowel, enter a word if one or both have no vowels') do
     new_ana = Anagram.new('vowl', 'nvwl')
     expect(new_ana.vowel?()).to(eq('enter a word!'))
   end
@@ -31,7 +31,12 @@ describe ('anagrams') do
 
   it('check to see if string input has multiple words') do
     new_ana = Anagram.new('hi man', 'nam ih')
-    expect(new_ana.multi_word?()).to(eq('anagram'))
+    expect(new_ana.multi_word?()).to(eq('anagram!'))
+  end
+
+  it('checks to see if a multi string input has vowels') do
+    new_ana = Anagram.new('hp mn', 'nm llh')
+    expect(new_ana.multi_vowel()).to(eq('enter a word!'))
   end
 
 end
