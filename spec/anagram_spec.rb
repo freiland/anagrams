@@ -21,6 +21,6 @@ describe ('anagrams') do
 
   it('check to see if input string has multiple words') do
     new_ana = Anagram.new('hi man', 'sup callz')
-    expect(new_ana.multi_anagram()).to(eq('snead'))
+    expect(new_ana.multi_anagram()).to(eq('letter match'))
   end
 end

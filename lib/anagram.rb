@@ -36,28 +36,33 @@ class Anagram
  end
 
  def multi_anagram()
+  
   up_one = @word_one.upcase.split(//).sort
   up_two = @word_two.upcase.split(//).sort
+  
   arr = []
   two_arr = []
+  
   up_one.each do |letter|
     if letter.match(/\w/)
       arr.push(letter)
-
-    
-    end
-    arr
+    end 
   end
 
   up_two.each do |letter|
     if letter.match(/\w/)
       two_arr.push(letter)
 
-    
-    end
-    
+    end   
   end
-  two_arr
+
+  if ((arr & two_arr) == [])
+    return ('antigram')
+  else
+    return ('letter match')
+  end
+
+  
 end
 
   #up_two = @word_two.upcase.split(//).so
