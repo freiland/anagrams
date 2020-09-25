@@ -36,18 +36,16 @@ class Anagram
  end
 
  def multi_anagram()
-  up_one = @word_one.upcase.split(//).sort
+  up_one = @word_one.upcase.split(//).sort.gsub(/\s+/, "")
 
-  up_two = @word_two.upcase.split(//).sort
+  #up_two = @word_two.upcase.split(//).sort
+ end
 
-  if ((up_one & up_two) == [])
-    return ('antigram')
-  else
-    return ('letter match')
-  end
+
+  
 end
 
 
-end
+
   
     
