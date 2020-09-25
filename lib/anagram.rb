@@ -7,16 +7,18 @@ class Anagram
 
 
   def check?()
-    arr_one = []
-    arr_two = []
+    
     up_one = @word_one.upcase.split(//).sort
+    
     up_two = @word_two.upcase.split(//).sort
     
     up_one == up_two
   end
 
   def vowel?()
-    @word_one.include?('aeiou')
+     if (@word_two.match(/[aeiou]/) == nil)
+      return ('enter a word!')
+     end
   end
 end
   
