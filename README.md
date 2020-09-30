@@ -6,7 +6,7 @@
 
 ## Description 
 
-_This application prompts a user to enter two words or phrases for comparison as an anagram or antigram. After the word or phrase is input, the program uses a split method to determine whether a single word or a phrase was input. If a phrase was input, the program uses a method specific for a mult-word string. First it tests whether the input words are actually words by determining if they contain a string.Next it tests if they are an anagram, and then an antigram. If the input is just a single string the program follows a replicate method for a single word._
+_This application prompts a user to enter two words or phrases for comparison as an anagram or antigram. After the word or phrase is input, the program uses a split method to determine whether a single word or a phrase was input. If a phrase was input, the program uses a method specific for a mult-word string. First it tests whether the input words are actually words by determining if they contain a vowel.Next it tests if they are an anagram, and then an antigram. If the input is just a single string the program follows a replicate method for a single word._
 
 
 ## Setup/Installation Requirements
@@ -21,7 +21,7 @@ _This application prompts a user to enter two words or phrases for comparison as
 
 ## Known Bugs
 
-_For a mult-word input not containing vowels, the program will not return a message asking the user to input a real word._
+_No known bugs._
 
 ## Support and Contact Information
 
